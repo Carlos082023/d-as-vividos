@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #049f35a2;  /* Amarillo brillante */
+  --secondary-color: #ec25a6; /* Rosado */
+  --background-color: #f7f7f7; /* Fondo suave */
+  --button-color: #ff6f61; /* Color cálido para botones */
+  --hover-button-color: #ff4777; /* Hover más fuerte */
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  justify-content: center;
+  text-align: center;
+  background-image: url('src/assets/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  color: var(--primary-color); /* Color del texto principal */
+  margin-bottom: 20px;
+}
+
+h1 i {
+  vertical-align: middle; /* Alinea el ícono al centro del texto */
+  color:var(--primary-color); /* Color específico para el ícono */
+  margin-right: 10px;
+}
+
+
+button {
+  border-radius: 50px;
+  padding: 0.6em 1.3em;
+  background-color: var(--button-color);
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-left: 20px;
+}
+button i{
+  margin-right: 10px;
+}
+
+button:hover {
+  transform: scale(1.1); /* Botón ligeramente expandido */
+  background-color: var(--hover-button-color);
+  box-shadow: 0 4px 20px rgba(255, 99, 99, 0.6); /* Sombra para resaltar */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilo para el input */
+input[type="date"] {
+  width: 100%; /* Hacerlo tomar el 100% del contenedor */
+  max-width: 350px; /* Limitar el ancho máximo */
+  padding: 0.8em 1.2em; /* Aumentar el padding para que sea más grande */
+  font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 2px solid #ccc; /* Borde más visible */
+  background-color: #fff; /* Fondo blanco */
+  color: #333; /* Color de texto oscuro */
+  margin-bottom: 20px; /* Espaciado abajo */
+  transition: border-color 0.3s; /* Transición suave en el borde */
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: var(--button-color); /* Cambio de borde cuando tiene foco */
+}
+
+input[type="date"]:hover {
+  border-color: #ff4777; /* Cambio de color en hover */
+}
+
+p {
+  font-size: 2.0em;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+@keyframes destello {
+  0% {
+    opacity: 0;
+    color: #93f807; /* Puedes elegir otro color */
+  }
+  50% {
+    opacity: 1;
+    color: #db0606;
+  }
+  100% {
+    opacity: 0;
+    color: #130cec;
+  }
+}
+
+.destello {
+  animation: destello 2.5s ease-in-out; /* El tiempo del destello */
+  font-weight: bold;
+}
+
+
