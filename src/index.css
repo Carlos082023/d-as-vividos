@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #049f35a2;  /* Amarillo brillante */
+  --primary-color: #ff0c24f3;  /* Amarillo brillante */
   --secondary-color: #ec25a6; /* Rosado */
   --background-color: #f7f7f7; /* Fondo suave */
   --button-color: #ff6f61; /* Color cálido para botones */
@@ -94,20 +94,20 @@ p {
 @keyframes destello {
   0% {
     opacity: 0;
-    color: #93f807; /* Puedes elegir otro color */
+    color: #230673; /* Puedes elegir otro color */
   }
   50% {
     opacity: 1;
-    color: #db0606;
+    color: #f80404;
   }
   100% {
     opacity: 0;
-    color: #130cec;
+    color: #013f1b;
   }
 }
 
 .destello {
-  animation: destello 2.5s ease-in-out; /* El tiempo del destello */
+  animation: destello 1.5s ease-in-out; /* El tiempo del destello */
   font-weight: bold;
 }
 
